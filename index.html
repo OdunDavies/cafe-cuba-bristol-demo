@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Cafe Cuba | Cuban kitchen on Stokes Croft, Bristol</title>
+  <meta name="description" content="Concept demo for Cafe Cuba, a Cuban and Caribbean kitchen at 69 Stokes Croft, Bristol. Menu notes, hours, reviews, and how to book a table. Not the official site." />
+  <meta property="og:title" content="Cafe Cuba — Stokes Croft, Bristol" />
+  <meta property="og:description" content="A concept website for Cafe Cuba: ropa vieja, plantain, mojitos, and a small open kitchen on Stokes Croft. Not affiliated." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,640&family=Outfit:wght@380;500;650&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Cafe Cuba",
+    "servesCuisine": ["Cuban", "Caribbean", "Latin"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "69 Stokes Croft",
+      "addressLocality": "Bristol",
+      "postalCode": "BS1 3QP",
+      "addressCountry": "GB"
+    },
+    "telephone": "+441173294722",
+    "url": "https://www.facebook.com/p/Cafe-Cuba-Bristol-100064076831572/",
+    "priceRange": "££",
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"12:00","closes":"22:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"12:00","closes":"22:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"12:00","closes":"22:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"12:00","closes":"22:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"12:00","closes":"22:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"17:00","closes":"22:00"}
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --ink: #1b1410;
+      --cream: #f4eadc;
+      --paper: #fff8ef;
+      --palm: #1c4a38;
+      --palm-deep: #123227;
+      --rum: #c4531d;
+      --gold: #d9a441;
+      --line: rgba(27,20,16,.14);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(900px 420px at 90% -10%, rgba(217,164,65,.28), transparent 60%),
+        linear-gradient(180deg, #f7efe3 0%, var(--cream) 40%, #efe2d0 100%);
+      font-family: Outfit, sans-serif;
+      font-weight: 380;
+      line-height: 1.55;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    header.nav {
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: blur(12px);
+      background: rgba(244,234,220,.86);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; min-height: 68px; gap: 16px; }
+    .mark { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 650; letter-spacing: .04em; }
+    .mark svg { display: block; }
+    nav.links { display: flex; gap: 18px; font-size: 14px; }
+    nav.links a { text-decoration: none; }
+    nav.links a:hover { color: var(--rum); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      background: var(--rum); color: #fff8ef; text-decoration: none;
+      border: 0; border-radius: 999px; padding: 12px 18px; font: 650 14px Outfit, sans-serif;
+      cursor: pointer;
+    }
+    .btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+    .btn:focus-visible, a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+    .hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 36px; padding: 54px 0 28px; align-items: center; }
+    .eyebrow { letter-spacing: .18em; text-transform: uppercase; font-size: 12px; color: var(--palm); font-weight: 650; }
+    h1, h2, h3 { font-family: Fraunces, serif; font-weight: 560; letter-spacing: -.02em; line-height: 1.05; margin: 0 0 12px; }
+    h1 { font-size: clamp(46px, 7vw, 86px); }
+    h2 { font-size: clamp(32px, 4vw, 48px); }
+    p.lede { font-size: 18px; max-width: 46ch; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    .meta { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 22px; font-size: 14px; }
+    .meta b { display: block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+    .stage {
+      background: var(--palm-deep);
+      color: #f6efe4;
+      border-radius: 28px;
+      min-height: 420px;
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(27,20,16,.16);
+    }
+    .stage h2 { color: #f6efe4; font-size: 42px; }
+    .tile {
+      position: absolute; inset: auto 18px 18px 18px;
+      background: rgba(244,234,220,.1);
+      border: 1px solid rgba(244,234,220,.2);
+      border-radius: 18px;
+      padding: 16px;
+    }
+    section { padding: 64px 0; }
+    .grid-3, .grid-2 { display: grid; gap: 16px; }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: 1.1fr .9fr; }
+    .card, .quote, form, .hours {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 20px;
+    }
+    .card h3 { font-size: 26px; }
+    .tag { display: inline-block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--rum); font-weight: 650; }
+    .quote footer { margin-top: 10px; font-size: 13px; opacity: .75; }
+    details { border-bottom: 1px solid var(--line); padding: 12px 0; }
+    summary { cursor: pointer; font-weight: 650; }
+    form { display: grid; gap: 10px; }
+    label { font-size: 13px; font-weight: 650; }
+    input, textarea, select {
+      width: 100%; border: 1px solid var(--line); border-radius: 12px; padding: 12px; font: inherit; background: #fff;
+    }
+    footer.site { padding: 28px 0 48px; font-size: 13px; color: #5c5148; }
+    .banner {
+      background: var(--ink); color: #f6efe4; font-size: 13px; text-align: center; padding: 8px 12px;
+    }
+    .pattern { width: 140px; height: 140px; float: right; opacity: .9; }
+    @media (max-width: 820px) {
+      .hero, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+      nav.links { display: none; }
+      .stage { min-height: 320px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">Concept demo prepared for Cafe Cuba by Northline Studio. Not affiliated. Not the official website.</div>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="mark" href="#top">
+        <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="13" fill="#1c4a38"/><path d="M8 18c2-6 4-9 6-9s4 3 6 9" stroke="#d9a441" stroke-width="1.6" fill="none"/><circle cx="14" cy="9" r="1.4" fill="#f4eadc"/></svg>
+        Cafe Cuba
+      </a>
+      <nav class="links" aria-label="Primary">
+        <a href="#kitchen">Kitchen</a>
+        <a href="#plates">Plates</a>
+        <a href="#visit">Visit</a>
+        <a href="#voices">Voices</a>
+        <a href="#book">Book</a>
+      </nav>
+      <a class="btn" href="tel:+441173294722">Call to book</a>
+    </div>
+  </header>
+  <main id="top">
+    <div class="wrap hero">
+      <div>
+        <p class="eyebrow">Stokes Croft · Bristol · BS1 3QP</p>
+        <h1>A small Cuban kitchen, open to the street.</h1>
+        <p class="lede">Cafe Cuba cooks Cuban and Caribbean plates a few metres from the table — ropa vieja, roast pork, plantain, yuca, and mojitos — in a room that regulars treat as a neighbourhood table rather than a chain.</p>
+        <div class="cta-row">
+          <a class="btn" href="tel:+441173294722">Call 0117 329 4722</a>
+          <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Cafe+Cuba+69+Stokes+Croft+Bristol" target="_blank" rel="noopener">Directions</a>
+        </div>
+        <div class="meta">
+          <div><b>Google</b> 4.9 from about 308 reviews</div>
+          <div><b>Tripadvisor</b> 4.7 · 60 reviews · Travelers’ Choice</div>
+          <div><b>Monday</b> Closed</div>
+        </div>
+      </div>
+      <div class="stage" aria-hidden="false">
+        <svg class="pattern" viewBox="0 0 120 120" aria-hidden="true">
+          <rect width="120" height="120" fill="#123227"/>
+          <path d="M20 90c10-30 18-46 30-46s20 16 30 46" stroke="#d9a441" fill="none" stroke-width="3"/>
+          <circle cx="50" cy="38" r="6" fill="#c4531d"/>
+          <path d="M78 30c8 8 8 20 0 32" stroke="#f4eadc" fill="none"/>
+        </svg>
+        <p class="eyebrow" style="color:#d9a441">Open kitchen</p>
+        <h2>Cooked to order, beside the tables.</h2>
+        <p>The Bristol Sauce described a glass-fronted room next to Turbo Island, with about a dozen tables facing a small steel-lined kitchen.</p>
+        <div class="tile">Tripadvisor reviewers note seating for about 20 covers, plus a couple of outside tables in good weather. Evenings fill — call ahead.</div>
+      </div>
+    </div>
+
+    <section id="kitchen">
+      <div class="wrap grid-2">
+        <div>
+          <p class="eyebrow">The room</p>
+          <h2>Home cooking, not a tourist set.</h2>
+          <p>The Bristol Sauce (February 2025) reported that Cafe Cuba and Morales Cafe are part of a small family set of businesses linked to Osvaldo Morales, described as a former coffee farmer from Guantánamo province, and David Otero, described as a former barman at the Hotel Guantánamo. The same piece said Cafe Cuba opened on Stokes Croft after Osvaldo arrived in Bristol, and that the kitchen plays cubaton, bachata and dembow at a tolerable volume.</p>
+          <p>Morales Cafe, at 192 Cheltenham Road, is a related daytime cafe according to that article — daughters Omara and Ana were named as running it. Treat that as press reporting, not a claim this demo can verify independently.</p>
+        </div>
+        <div class="card">
+          <p class="tag">What guests mention</p>
+          <h3>Generous plates, strong cocktails, a short room.</h3>
+          <p>Bristol Live called it a hidden gem on Stokes Croft and singled out ropa vieja and the mojitos. Tripadvisor guests mention vegan choices, flan, and staff finding a high chair without fuss. Several say the room is small and booking is the sensible move at night.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="plates">
+      <div class="wrap">
+        <p class="eyebrow">From published menus and reviews</p>
+        <h2>Plates people come back for.</h2>
+        <p>Prices move. Bristol Live (2022) listed ropa vieja at £14.99. The Bristol Sauce (2025) listed ropa vieja, roast pork, and a rice and prawn dish at £18.99, with most cocktails at £8.50. Confirm on the night.</p>
+        <div class="grid-3" style="margin-top:18px">
+          <article class="card">
+            <p class="tag">House plate</p>
+            <h3>Ropa vieja</h3>
+            <p>Shredded beef stewed with garlic, onion, peppers, olives and tomato, served with rice and black beans, avocado and fried plantain — as described by Bristol Live and The Bristol Sauce. A vegan ropa vieja has also been listed.</p>
+          </article>
+          <article class="card">
+            <p class="tag">From the pan</p>
+            <h3>Roast pork & arroz con pollo</h3>
+            <p>Marinated roast pork is a Cuban favourite on the menu in press write-ups. Arroz con pollo has been praised on Tripadvisor for generous portions, cooked from scratch.</p>
+          </article>
+          <article class="card">
+            <p class="tag">To start or share</p>
+            <h3>Tamales, tostones, yuca</h3>
+            <p>Maize tamales, fried plantain (tostones / chicharita), and yuca — boiled with garlic sauce or fried — show up across menu scrapes and the Bristol Sauce review.</p>
+          </article>
+          <article class="card">
+            <p class="tag">From the sea</p>
+            <h3>Prawns & seafood casserole</h3>
+            <p>A tomato and white-wine prawn rice and a seafood casserole have been listed publicly. HappyCow notes a separate vegan section including ropa vieja and tostones.</p>
+          </article>
+          <article class="card">
+            <p class="tag">After</p>
+            <h3>Flan</h3>
+            <p>Flan is a repeated Tripadvisor mention, including a “flan de tres leches” line on a third-party menu scrape. Cuban coffee is another closer guests write about.</p>
+          </article>
+          <article class="card">
+            <p class="tag">Glass</p>
+            <h3>Mojito & daiquiri</h3>
+            <p>Guests repeatedly call the mojitos a reason to stay. The Bristol Sauce described a daiquiri shaken rather than packed with ice, and a mojito with an extra band of rum.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit">
+      <div class="wrap grid-2">
+        <div>
+          <p class="eyebrow">How to get a table</p>
+          <h2>Call. The room does not hold a walk-in rush.</h2>
+          <ol>
+            <li>Phone 0117 329 4722 and say how many, and whether you need a high chair.</li>
+            <li>Lunch is the quieter sitting, according to guests. Evenings and weekends are when people advise booking.</li>
+            <li>Tell them about allergies when you book. A vegan list has been available; it is still a meat-forward kitchen.</li>
+          </ol>
+          <div class="hours" style="margin-top:16px">
+            <h3>Hours as listed on Tripadvisor</h3>
+            <p>Tue–Sat 12:00–22:00 · Sun 17:00–22:00 · Mon closed.</p>
+            <p>Other directories sometimes show Friday and Saturday until 23:00. Check before you travel.</p>
+          </div>
+        </div>
+        <div class="card">
+          <p class="tag">Stokes Croft</p>
+          <h3>69 Stokes Croft, BS1 3QP</h3>
+          <p>A short walk from the city centre, on the stretch locals know for independent rooms rather than hotel restaurants. Caribbean Croft is a few doors away at 30 Stokes Croft with its own site and a Jamaican menu — a different kitchen, useful if this room is full.</p>
+          <p>Takeaway and delivery are listed on Tripadvisor. Card payments are accepted. Outdoor seating is listed when the weather allows.</p>
+          <p><a href="https://www.google.com/maps/search/?api=1&query=69+Stokes+Croft+Bristol+BS1+3QP" target="_blank" rel="noopener">Open in Google Maps</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="voices">
+      <div class="wrap">
+        <p class="eyebrow">Published words, not rewritten</p>
+        <h2>What people have already said.</h2>
+        <div class="grid-3" style="margin-top:18px">
+          <blockquote class="quote">
+            <p>“So good! The food is very good and super cocktails! It’s quite small but a good address to go without any doubt!”</p>
+            <footer>Tripadvisor, January 2026 visit, Bristol guest</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“We had 2 mains from the Vegetarian/Vegan choices and both were incredible… the beautiful Mojitos are not to be missed.”</p>
+            <footer>Kevin O, Tripadvisor, December 2025, family visit</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“It's rare to find Cuba cuisine this good outside Cuba, and that includes Miami.”</p>
+            <footer>TravelLife19, Tripadvisor, August 2024</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap" style="max-width:760px">
+        <p class="eyebrow">Before you go</p>
+        <h2>Questions guests usually ask.</h2>
+        <details open>
+          <summary>Do I need to book?</summary>
+          <p>Evenings, yes if you can. Guests and local press both say the room is small and fills. Lunch is described as quieter.</p>
+        </details>
+        <details>
+          <summary>Is there a vegan menu?</summary>
+          <p>HappyCow and Tripadvisor guests describe a vegan or vegetarian list, including a vegan ropa vieja and potaje de frijoles. It is still a meat-led kitchen.</p>
+        </details>
+        <details>
+          <summary>Can I bring a buggy?</summary>
+          <p>One December 2025 Tripadvisor review says staff found a high chair for a 10-month-old. The room is small, so call first.</p>
+        </details>
+        <details>
+          <summary>Is this the official website?</summary>
+          <p>No. Public listings point to a Facebook page, not an owned site. This page is a concept demo and is not affiliated with Cafe Cuba.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="book">
+      <div class="wrap grid-2">
+        <div>
+          <p class="eyebrow">Book or ask</p>
+          <h2>The phone is the real booking desk.</h2>
+          <p>No public email was verified for this demo. Use the call button, or send the note below to their Facebook page.</p>
+          <p><a class="btn" href="tel:+441173294722">Call 0117 329 4722</a></p>
+          <p style="margin-top:14px"><a href="https://www.facebook.com/p/Cafe-Cuba-Bristol-100064076831572/" target="_blank" rel="noopener">Facebook page</a></p>
+        </div>
+        <form id="note">
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
+          <label for="when">When and how many</label>
+          <input id="when" name="when" placeholder="Friday 7pm, 2 people" required />
+          <label for="msg">Note</label>
+          <textarea id="msg" name="msg" rows="4" placeholder="High chair, vegan main, allergies"></textarea>
+          <button class="btn" type="submit">Copy a message for Facebook</button>
+          <p id="status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <p>Concept demo prepared for Cafe Cuba by Northline Studio. Not affiliated. Facts drawn from Tripadvisor, Google review aggregators, Bristol Live, The Bristol Sauce, HappyCow and public directory listings. Hours and prices can change.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('note').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var text = 'Hello Cafe Cuba, I would like a table. ' +
+        document.getElementById('name').value + ', ' +
+        document.getElementById('when').value + '. ' +
+        document.getElementById('msg').value;
+      navigator.clipboard.writeText(text).then(function () {
+        document.getElementById('status').textContent = 'Copied. Paste it into a Facebook message, or just call.';
+      }).catch(function () {
+        document.getElementById('status').textContent = text;
+      });
+    });
+  </script>
+</body>
+</html>
